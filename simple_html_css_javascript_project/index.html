@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport", content="width=device-width, initial-scale=1.0">
+        <title>StudyHub</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <nav>
+            <h1>
+                StudyHub
+            </h1>
+
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Subject</a></li>
+                <li><a href="#">Tasks</a></li>
+                <li><a href="#">Timer</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Welcome to StudyHub</h2>
+                <p>Track your learning and stay consistent</p>
+            </section>
+
+            <section class="subjects">
+                <h2>My Subjects</h2>
+
+                <article>
+                    <h3>Javascript</h3>
+                    <p>Learn the fundamentals of Javascript programming</p>
+                </article>
+                <article>
+                    <h3>Mathematics</h3>
+                    <p>Learn the fundamentals of Mathematics</p>
+                </article>
+                <article>
+                    <h3>Data Science</h3>
+                    <p>Learn the fundamentals of Data Science</p>
+                </article>
+            </section>
+            
+
+            <section class="tasks">
+                <h2>My Tasks</h2>
+
+                <form>
+                    <label for="task">Add a task:</label>
+                    <input type="text" id="task" name="task" placeholder="Enter a task">
+
+                    <button type="submit">Add Task</button>
+                </form>
+
+                <ul>
+                    
+                </ul>
+            </section>
+
+            <section class="timer">
+                <h2>Study Timer</h2>
+
+                <p id="timer">25:00</p>
+
+                <button id="start-timer">Start</button>
+                <button id="pause-timer">Pause</button>
+                <button id="reset-timer">Reset</button>
+            </section>
+
+            <section class="progress">
+                <h2>My Progress</h2>
+
+                <p>Task Completed : <span id="tasks-completed">0</span></p>
+                <p>Total Tasks : <span id="total-tasks">3</span></p>
+
+                <progress id="progress" value="0" max="100"></progress>
+            </section>
+
+        </main>
+    </body>
+</html>
