@@ -1,0 +1,55 @@
+#root {
+  min-height: 100vh;
+}
+
+.app {
+  min-height: 100vh;
+  background: #0e111b;
+  color: #f0ede8;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 6%;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-logo {
+  font-size: 17px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.nav-links a {
+  font-size: 13px;
+  color: #9295a3;
+}
+
+.nav-links a:hover {
+  color: white;
+  background-color: var(--text-primary);
+  transition: color 0.2s ease;
+}
+
+.nav-contact {
+  font-size: 13px;
+  padding: 12px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 30px;
+}
+
+.nav-contact:hover {
+  background-color: var(--bg-secondary);
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
