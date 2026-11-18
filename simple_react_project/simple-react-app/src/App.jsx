@@ -1,3 +1,4 @@
+import UserCard from "./components/UserCard"
 import Welcome from "./components/Welcome"
 
 function App(){
@@ -5,6 +6,7 @@ function App(){
     <div>
       <h1>Hello React</h1>
       <Welcome name = "Preetham Prasd" age = {22} />
+      <UserCard/>
     </div>
     
   )

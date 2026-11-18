@@ -1,7 +1,4 @@
 import { useState } from "react"
-
-
-
 function UserCard(){
 
     const [count, setCount] = useState(0)
@@ -9,8 +6,18 @@ function UserCard(){
     return (
         <div>
             <h2>
-                Count
+                Count : {count}
             </h2>
+
+            <button onClick={() => setCount(count+1)}>
+                +
+            </button>
+
+            <button onClick={() => setCount(count-1)}>
+                -
+            </button>
         </div>
     )
 }
+
+export default UserCard
